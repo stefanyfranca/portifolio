@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { useInView } from 'framer-motion'
 import { STATS } from '../data/content.js'
 import useCountUp from '../hooks/useCountUp.js'
 
