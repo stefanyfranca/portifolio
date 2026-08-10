@@ -22,7 +22,7 @@ export const CONTACT = {
   email: 'stefany.030506@gmail.com',
   github: 'https://github.com/stefanyfranca',
   githubHandle: 'stefanyfranca',
-  linkedin: 'https://www.linkedin.com/in/stefanyfranca',
+  linkedin: 'https://www.linkedin.com/in/stefany-frança-0b62b4269',
   cv: 'curriculo.pdf',
 }
 
