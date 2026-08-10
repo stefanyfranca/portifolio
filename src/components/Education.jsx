@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { HiOutlineAcademicCap, HiOutlineCode, HiOutlineBookOpen } from 'react-icons/hi'
-import { EDUCATION, COURSES } from '../data/content.js'
+import { EDUCATION, COURSES, LANGUAGES } from '../data/content.js'
 
 const ICONS = {
   graduation: HiOutlineAcademicCap,
@@ -96,6 +96,39 @@ export default function Education() {
               </motion.article>
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className="mt-12">
+        <h3 className="mb-5 flex items-center gap-2 font-display text-lg font-semibold text-white">
+          <HiOutlineAcademicCap className="text-primary" />
+          Idiomas
+        </h3>
+        <div className="grid gap-4 sm:grid-cols-3">
+          {LANGUAGES.map((lang, i) => (
+            <motion.div
+              key={lang.name}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ delay: i * 0.1, duration: 0.6 }}
+              className="card p-6"
+            >
+              <div className="flex items-center justify-between">
+                <h4 className="font-display font-semibold text-white">{lang.name}</h4>
+                <span className="tag">{lang.level}</span>
+              </div>
+              <div className="mt-4 h-1.5 overflow-hidden rounded-full bg-line">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: `${lang.percent}%` }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 + i * 0.1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+                  className="h-full rounded-full bg-gradient-to-r from-primary to-secondary"
+                />
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

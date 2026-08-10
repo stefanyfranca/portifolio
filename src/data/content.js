@@ -30,7 +30,7 @@ export const STATS = [
   { value: 1.5, decimals: 1, suffix: '+', label: 'Anos em dados & suporte técnico' },
   { value: 3, decimals: 0, suffix: '+', label: 'Áreas de atuação (DS, BI, pesquisa)' },
   { value: 4, decimals: 0, suffix: '+', label: 'Cursos complementares' },
-  { value: 2, decimals: 0, suffix: '', label: 'Idiomas falados' },
+  { value: 3, decimals: 0, suffix: '', label: 'Idiomas falados' },
 ]
 
 export const ABOUT = [
@@ -171,6 +171,12 @@ export const COURSES = [
     org: 'KNN Idiomas',
     tag: 'Idioma',
   },
+]
+
+export const LANGUAGES = [
+  { name: 'Português', level: 'Nativo', percent: 100 },
+  { name: 'Inglês', level: 'Avançado', percent: 85 },
+  { name: 'Alemão', level: 'Em aprendizado', percent: 40 },
 ]
 
 export const GITHUB_USER = 'stefanyfranca'
